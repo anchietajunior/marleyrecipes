@@ -7,12 +7,16 @@ This is a really cool code test for a really cool company.
 docker-compose up --build
 ```
 
+[Link to your localhost:3000](http://localhost:3000)
+
 ## Database setup
 
 ```sh
 docker-compose web run rails db:create && rails db:migrate
 ```
 
-## Access application
+## Running the tests
 
-[Link to your localhost:3000](http://localhost:3000)
+```sh
+docker-compose web run bundle exec rspec
+```
