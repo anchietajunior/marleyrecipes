@@ -9,12 +9,6 @@ docker-compose up --build
 
 [Link to your localhost:3000](http://localhost:3000)
 
-## Database setup
-
-```sh
-docker-compose web run rails db:create && rails db:migrate
-```
-
 ## Running the tests
 
 ```sh
