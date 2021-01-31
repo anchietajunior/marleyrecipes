@@ -2,5 +2,6 @@ AllCops:
   TargetRubyVersion: 2.7
   Exclude:
     - 'Gemfile'
+    - 'config/routes.rb'
   Layout/LineLength:
     Max: 120
