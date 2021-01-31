@@ -24,14 +24,13 @@ RUN gem install bundler:2.2.5
 RUN bundle install
 COPY . /mycontentful
 
+COPY entrypoint.sh /usr/bin/
+RUN chmod +x /usr/bin/entrypoint.sh
+ENTRYPOINT ["entrypoint.sh"]
+
 # Create cache file for development environment
 RUN touch /mycontentful/tmp/caching-dev.txt
 
-ENTRYPOINT ["bundle", "exec"]
-
 EXPOSE 3000
-
-# Assets precompile
-RUN bundle exec rails assets:precompile
 
 CMD ["rails", "server", "-b", "0.0.0.0"]
