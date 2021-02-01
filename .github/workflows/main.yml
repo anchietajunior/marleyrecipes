@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    services:
+      postgres:
+        image: postgres:11
+        ports: ['5432:5432']
+        env:
+          POSTGRES_PASSWORD: postgres
+      redis:
+        image: redis:6
+        ports: ['6379:6379']
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1.45.0
+        with:
+          ruby-version: 2.7.2
+
+      - uses: Borales/actions-yarn@v2.3.0
+        with:
+          cmd: install
+
+      - name: Install Dependencies
+        run: |
+          # sudo apt install -yqq libpq-dev
+          gem install bundler
+
+      - name: Install Gems
+        run: |
+          bundle install
+
+      - name: Prepare Database
+        run: |
+          bundle exec rails db:test:prepare
+
+      - name: Run Tests
+        env:
+          DATABASE_HOST: postgres
+          DATABASE_PORT: 5432
+          DATABASE_USERNAME: postgres
+          DATABASE_PASSWORD: postgres
+          REDIS_URL: redis://redis:6379/0
+          RAILS_MASTER_KEY: ${{secrets.RAILS_MASTER_KEY}}
+        run: |
+          bundle exec rails test
