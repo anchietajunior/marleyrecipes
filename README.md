@@ -1,4 +1,4 @@
-# MyContentful
+# Marley Recipes
 
 ![Screen](https://i.ibb.co/9rKwgf5/Screen-Shot-2021-02-01-at-09-49-51.png)
 
