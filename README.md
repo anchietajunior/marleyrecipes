@@ -24,6 +24,10 @@ docker-compose -up
 ```sh
 docker-compose web run bundle exec rspec
 ```
+## Caching techniques used in this project
+
+- Page caching for recipe details pages
+- Low-leve caching for third API requests
 
 ## Engineering Principles this project was based on
 
