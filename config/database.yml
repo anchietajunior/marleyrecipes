@@ -9,8 +9,8 @@ default: &default
 
 development:
   <<: *default
-  database: mycontentful_development
+  database: marleyrecipes_development
 
 test:
   <<: *default
-  database: mycontentful_test
+  database: marleyrecipes_test
