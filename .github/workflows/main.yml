@@ -46,6 +46,7 @@ jobs:
             DATABASE_PASSWORD: postgres
             REDIS_URL: redis://redis:6379/0
             RAILS_MASTER_KEY: ${{secrets.RAILS_MASTER_KEY}}
-        run: bundle exec rails db:test:prepare
-        run: bundle exec rails test
+        run: |
+          bundle exec rails db:test:prepare
+          bundle exec rails test
           
