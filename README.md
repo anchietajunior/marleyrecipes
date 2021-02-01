@@ -1,6 +1,6 @@
 # MyContentful
 
-![Screen](https://i.ibb.co/S7Rc3Jc/Screen-Shot-2021-02-01-at-09-42-01.png)
+![Screen](https://i.ibb.co/DCqDkPM/Screen-Shot-2021-02-01-at-09-44-23.png)
 
 This is a really cool code test for a really cool company.
 ## Project setup
