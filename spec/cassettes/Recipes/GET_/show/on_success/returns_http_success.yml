@@ -1,0 +1,354 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/kk2bw5ojx476/entries/4dT8tcb6ukGSIg2YyuGEOm?access_token=7ac531648a1b5e1dab6c18b0979f822a5aad0fe5f1109829b8a197eb2be4b84c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.78.1
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1461'
+      Accept-Patch:
+      - application/json-patch+json
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent,X-Contentful-Enable-Alpha-Feature
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cf-Environment-Id:
+      - master
+      Cf-Environment-Uuid:
+      - 3e111988-d2b3-4647-a0a8-ed1215cbd839
+      Cf-Organization-Id:
+      - 0OxgeKaTWSWzTukWE0scEe
+      Cf-Space-Id:
+      - kk2bw5ojx476
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Contentful-Api:
+      - cda_cached
+      Etag:
+      - W/"7815273502012432141"
+      Server:
+      - Contentful
+      X-Content-Type-Options:
+      - nosniff
+      X-Contentful-Region:
+      - us-east-1
+      X-Contentful-Route:
+      - "/spaces/:space/entries/:id"
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 01 Feb 2021 01:23:56 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '6203'
+      X-Served-By:
+      - cache-gru17134-GRU
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Contentful-Request-Id:
+      - 4e40a9d0-a310-47f2-aa4f-f377b5348100
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "kk2bw5ojx476"
+              }
+            },
+            "id": "4dT8tcb6ukGSIg2YyuGEOm",
+            "type": "Entry",
+            "createdAt": "2018-05-07T13:38:22.351Z",
+            "updatedAt": "2018-05-07T13:41:01.986Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 2,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "recipe"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "White Cheddar Grilled Cheese with Cherry Preserves & Basil",
+            "photo": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Asset",
+                "id": "61XHcqOBFYAYCGsKugoMYK"
+              }
+            },
+            "calories": 788,
+            "description": "*Grilled Cheese 101*: Use delicious cheese and good quality bread; make crunchy on the outside and ooey gooey on the inside; add one or two ingredients for a flavor punch! In this case, cherry preserves serve as a sweet contrast to cheddar cheese, and basil adds a light, refreshing note. Use __mayonnaise__ on the outside of the bread to achieve the ultimate, crispy, golden-brown __grilled cheese__. Cook, relax, and enjoy!",
+            "tags": [
+              {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Entry",
+                  "id": "3RvdyqS8408uQQkkeyi26k"
+                }
+              }
+            ]
+          }
+        }
+  recorded_at: Mon, 01 Feb 2021 01:23:56 GMT
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/kk2bw5ojx476/assets/61XHcqOBFYAYCGsKugoMYK?access_token=7ac531648a1b5e1dab6c18b0979f822a5aad0fe5f1109829b8a197eb2be4b84c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.78.1
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '961'
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent,X-Contentful-Enable-Alpha-Feature
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cf-Environment-Id:
+      - master
+      Cf-Environment-Uuid:
+      - 3e111988-d2b3-4647-a0a8-ed1215cbd839
+      Cf-Organization-Id:
+      - 0OxgeKaTWSWzTukWE0scEe
+      Cf-Space-Id:
+      - kk2bw5ojx476
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Contentful-Api:
+      - cda_cached
+      Etag:
+      - '"12576393763463094418"'
+      Server:
+      - Contentful
+      X-Content-Type-Options:
+      - nosniff
+      X-Contentful-Region:
+      - us-east-1
+      X-Contentful-Route:
+      - "/spaces/:space/assets/:id"
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 01 Feb 2021 01:23:56 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '43566'
+      X-Served-By:
+      - cache-gru17149-GRU
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '2'
+      Vary:
+      - Accept-Encoding
+      X-Contentful-Request-Id:
+      - 5047e8eb-b84c-4303-8177-56d08083851e
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "kk2bw5ojx476"
+              }
+            },
+            "id": "61XHcqOBFYAYCGsKugoMYK",
+            "type": "Asset",
+            "createdAt": "2018-05-07T13:37:53.784Z",
+            "updatedAt": "2018-05-07T13:37:53.784Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "SKU1240 hero-374f8cece3c71f5fcdc939039e00fb96",
+            "file": {
+              "url": "//images.ctfassets.net/kk2bw5ojx476/61XHcqOBFYAYCGsKugoMYK/0009ec560684b37f7f7abadd66680179/SKU1240_hero-374f8cece3c71f5fcdc939039e00fb96.jpg",
+              "details": {
+                "size": 194737,
+                "image": {
+                  "width": 1020,
+                  "height": 680
+                }
+              },
+              "fileName": "SKU1240_hero-374f8cece3c71f5fcdc939039e00fb96.jpg",
+              "contentType": "image/jpeg"
+            }
+          }
+        }
+  recorded_at: Mon, 01 Feb 2021 01:23:56 GMT
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/kk2bw5ojx476/entries/3RvdyqS8408uQQkkeyi26k?access_token=7ac531648a1b5e1dab6c18b0979f822a5aad0fe5f1109829b8a197eb2be4b84c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.78.1
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '636'
+      Accept-Patch:
+      - application/json-patch+json
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent,X-Contentful-Enable-Alpha-Feature
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cf-Environment-Id:
+      - master
+      Cf-Environment-Uuid:
+      - 3e111988-d2b3-4647-a0a8-ed1215cbd839
+      Cf-Organization-Id:
+      - 0OxgeKaTWSWzTukWE0scEe
+      Cf-Space-Id:
+      - kk2bw5ojx476
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Contentful-Api:
+      - cda_cached
+      Etag:
+      - '"12789499792988705158"'
+      Server:
+      - Contentful
+      X-Content-Type-Options:
+      - nosniff
+      X-Contentful-Region:
+      - us-east-1
+      X-Contentful-Route:
+      - "/spaces/:space/entries/:id"
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 01 Feb 2021 01:23:56 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '2556'
+      X-Served-By:
+      - cache-gru17127-GRU
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Contentful-Request-Id:
+      - e61c7e87-a319-4571-867e-31acfe05de73
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "kk2bw5ojx476"
+              }
+            },
+            "id": "3RvdyqS8408uQQkkeyi26k",
+            "type": "Entry",
+            "createdAt": "2018-05-07T13:27:45.974Z",
+            "updatedAt": "2018-05-07T13:27:45.974Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 1,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "tag"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "name": "vegan"
+          }
+        }
+  recorded_at: Mon, 01 Feb 2021 01:23:56 GMT
+recorded_with: VCR 6.0.0

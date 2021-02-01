@@ -6,8 +6,23 @@
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
+import MarkdownIt from 'markdown-it'
 import "channels"
+
+// var MarkdownIt = require('markdown-it'), md = new MarkdownIt();
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+require("stylesheets/application.scss")
+
+document.addEventListener("turbolinks:load", function() {  
+  const md = new MarkdownIt();
+  const elementWithMarkdown = document.getElementById('md');
+
+  if (elementWithMarkdown != null) {
+    const content = elementWithMarkdown.dataset.description;
+    elementWithMarkdown.innerHTML = md.render(content);
+  }
+});

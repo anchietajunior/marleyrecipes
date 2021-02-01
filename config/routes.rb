@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'reciples/index'
-  get 'reciples/show'
-  root to: 'reciples#index'
+  resources :recipes, only: [:index, :show]
+  root to: 'recipes#index'
 end

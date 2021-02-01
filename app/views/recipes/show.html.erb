@@ -1,0 +1,31 @@
+<div class="pb-30" style="margin-bottom: 100px">
+
+<% if @recipe.present? %>
+
+  <h1 class="font-mono text-6xl font-bold mt-10 mb-3 text-yellow-500">
+    <%= @recipe.title %>
+  </h1>
+
+  <h4 class="font-mono text-3xl font-bold mb-3">
+    <%= @recipe.chef_name %>
+  </h4>
+
+  <img src="<%= @recipe.image_url %>" alt="Nome da receita" />
+
+  <p class="font-sans text-lg mt-5 mb-5" id="md" data-description="<%= @recipe.description %>"></p>
+
+  <% if @recipe.tags.present? %>
+    <h3 class="mr-2 mt-5 font-mono text-2xl font-bold" style="margin-bottom: 20px">
+      Tags: <%= @recipe.tags.join(', ') %>
+    </h3>
+  <% end %>
+
+<% else %>
+  <% flash.each do |type, msg| %>
+    <h3 class="font-mono text-3xl font-bold mt-10 mb-10 text-yellow-500">
+      <%= msg %>
+    </h3>
+  <% end %>
+<% end %>
+<%= link_to 'Back to home', root_path, class: 'bg-yellow-500 hover:bg-yellow-700 p-2 text-white font-mono rounded' %>
+</div>

@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/kk2bw5ojx476/entries/NysGB8obcaQWmq0aQ6qkC?access_token=7ac531648a1b5e1dab6c18b0979f822a5aad0fe5f1109829b8a197eb2be4b84c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - excon/0.78.1
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '642'
+      Accept-Patch:
+      - application/json-patch+json
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent,X-Contentful-Enable-Alpha-Feature
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cf-Environment-Id:
+      - master
+      Cf-Environment-Uuid:
+      - 3e111988-d2b3-4647-a0a8-ed1215cbd839
+      Cf-Organization-Id:
+      - 0OxgeKaTWSWzTukWE0scEe
+      Cf-Space-Id:
+      - kk2bw5ojx476
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Contentful-Api:
+      - cda_cached
+      Etag:
+      - '"9695671819849149153"'
+      Server:
+      - Contentful
+      X-Content-Type-Options:
+      - nosniff
+      X-Contentful-Region:
+      - us-east-1
+      X-Contentful-Route:
+      - "/spaces/:space/entries/:id"
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 31 Jan 2021 18:48:14 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '8930'
+      X-Served-By:
+      - cache-gru17122-GRU
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Contentful-Request-Id:
+      - f2a94bf9-63f8-4777-a26d-5f018281d6d8
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "kk2bw5ojx476"
+              }
+            },
+            "id": "NysGB8obcaQWmq0aQ6qkC",
+            "type": "Entry",
+            "createdAt": "2018-05-07T13:29:03.514Z",
+            "updatedAt": "2018-05-07T14:19:02.570Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "revision": 2,
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "chef"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "name": "Jony Chives"
+          }
+        }
+  recorded_at: Sun, 31 Jan 2021 18:48:14 GMT
+recorded_with: VCR 6.0.0

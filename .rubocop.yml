@@ -5,3 +5,5 @@ AllCops:
     - 'config/routes.rb'
   Layout/LineLength:
     Max: 120
+Documentation:
+    Enabled: false
