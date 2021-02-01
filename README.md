@@ -16,7 +16,7 @@ Use ***CTRL+C*** to stop the project.
 Run again with:
 
 ```sh
-docker-compose -up
+docker-compose up
 ```
 
 [Link to your localhost:3000](http://localhost:3000)
@@ -24,7 +24,7 @@ docker-compose -up
 ## Running the tests
 
 ```sh
-docker-compose web run bundle exec rspec
+docker-compose run web bundle exec rspec
 ```
 ## Caching techniques used in this project
 
