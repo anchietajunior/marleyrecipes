@@ -12,16 +12,18 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources
 
 # Install dependencies
 RUN apt-get update -qq
-RUN apt-get install -y --no-install-recommends nodejs postgresql-client \
-      locales yarn
+RUN apt-get install -y --no-install-recommends nodejs postgresql-client locales yarn
 
 WORKDIR /mycontentful
 COPY Gemfile /mycontentful/Gemfile
 COPY Gemfile.lock /mycontentful/Gemfile.lock
+COPY package.json /mycontentful/package.json
+COPY yarn.lock /mycontentful/yarn.lock
 
 # Deps
 RUN gem install bundler:2.2.5
 RUN bundle install
+RUN yarn
 COPY . /mycontentful
 
 COPY entrypoint.sh /usr/bin/
