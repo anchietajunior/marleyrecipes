@@ -8,6 +8,7 @@ This is a really cool code test for a really cool company.
 ### Build the project
 
 ```sh
+cd marleyrecipes
 docker-compose up --build
 ```
 
