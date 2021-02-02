@@ -5,10 +5,13 @@
 This is a really cool code test for a really cool company.
 ## Project setup
 
-### Build the project
+### Clone and build the project
 
 ```sh
+git clone git@github.com:anchietajunior/marleyrecipes.git
+
 cd marleyrecipes
+
 docker-compose up --build
 ```
 
