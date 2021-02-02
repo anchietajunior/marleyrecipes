@@ -8,10 +8,10 @@ This is a really cool code test for a really cool company.
 ### Build the project
 
 ```sh
-docker-compose up --build && docker-compose-up run web rails db:setup && rails db:test:prepare
+docker-compose up --build
 ```
 
-Use ***CTRL+C*** to stop the project.
+If you need to stop the project use ***CTRL+C***, and...
 
 Run again with:
 
